@@ -136,5 +136,5 @@ Base-64 warning: besides there being several different standards, padding isn't 
 
 ## License
 
-[MIT license](http://touma.mit-license.org/). (c) 2015 Kamijou Touma
+[MIT license](http://touma.mit-license.org/). (c) 2015 KamijouTouma
 and [contributors](https://github.com/kamijoutouma/bases.py/graphs/contributors).
