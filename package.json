@@ -6,7 +6,7 @@
 , "keywords": ["alphabet", "base", "base-36", "base-58", "base-62"]
 , "repository":
   { "type": "git"
-  , "url": "https://github.com/aseemk/bases.py.git"
+  , "url": "https://github.com/kamijoutouma/bases.py.git"
   }
 , "main": "bases.py"
 , "dependencies": {}
