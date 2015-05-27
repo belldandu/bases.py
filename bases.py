@@ -75,6 +75,8 @@ class Bases(object):
 		while num >= 0:
 			digits.append(num % base)# TODO handle negatives properly?
 			num = math.floor(num / base)
+			if num == 0:
+				break
 		chars = [];
 		while len(digits):
 			chars.append(alphabet[int(digits.pop())])
