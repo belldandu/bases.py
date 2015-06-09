@@ -133,6 +133,5 @@ class Test(unittest.TestCase):
 				self.assertEqual(bases.fromBase(str(exp), base), int(num))
 				i += 1
 
-# finally...
 if __name__ == '__main__':
 	unittest.main()
