@@ -5,6 +5,7 @@
 
 import math
 import re
+import string
 
 class Bases(object):
 
@@ -13,7 +14,7 @@ class Bases(object):
 
 		# Known alphabets:
 		self.NUMERALS = '0123456789'
-		self.LETTERS_LOWERCASE = 'abcdefghijklmnopqrstuvwxyz'
+		self.LETTERS_LOWERCASE = string.ascii_lowercase
 		self.LETTERS_UPPERCASE = self.LETTERS_LOWERCASE.upper()
 		self.KNOWN_ALPHABETS = {}
 
