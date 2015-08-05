@@ -13,7 +13,7 @@ class Bases(object):
 	def __init__(self):
 
 		# Known alphabets:
-		self.NUMERALS = '0123456789'
+		self.NUMERALS = string.digits
 		self.LETTERS_LOWERCASE = string.ascii_lowercase
 		self.LETTERS_UPPERCASE = self.LETTERS_LOWERCASE.upper()
 		self.KNOWN_ALPHABETS = {}
