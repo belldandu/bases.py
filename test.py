@@ -6,14 +6,14 @@ bases = Bases()
 
 class Test(unittest.TestCase):
 
-	def test_zero(self):
+	def testZero(self):
 		# for convenience, bases that begin with zero:
-		BASES_BEGINNING_WITH_ZERO = [2, 8, 10, 16, 32, 36, 62]
+		basesBeginningWithZero = [2, 8, 10, 16, 32, 36, 62]
 		# test zero across those bases:
-		for base in BASES_BEGINNING_WITH_ZERO:
+		for base in basesBeginningWithZero:
 			self.assertEqual(bases.toBase(0, base), '0')
 
-	def test_base10(self):
+	def testBase10(self):
 		# test base-10 with random numbers (fuzzy/smokescreen tests):
 		# note that extremely large numbers (e.g. 39415337704122060) cause bugs due
 		# to precision (e.g. that % 10 == 4 somehow), so we limit the digits to 16.
@@ -23,9 +23,9 @@ class Test(unittest.TestCase):
 			self.assertEqual(bases.toBase10(num), str(int(num)))
 			i += 1
 
-	def test_data(self):
+	def testData(self):
 		# the test data below is a map from base to lists of [input, exp]:
-		DATA = { 
+		data = { 
 			2:
 				[ [1, '1']
 				, [2, '10']
@@ -123,12 +123,12 @@ class Test(unittest.TestCase):
 			}
 
 		# go through and test all of the above data:
-		for base in DATA:
-			data = DATA[base]
+		for base in data:
+			dataTest = data[base]
 			i = 0
-			while i < len(data):
-				num = data[i][0]
-				exp = data[i][1]
+			while i < len(dataTest):
+				num = dataTest[i][0]
+				exp = dataTest[i][1]
 				self.assertEqual(bases.toBase(int(num), base), str(exp))
 				self.assertEqual(bases.fromBase(str(exp), base), int(num))
 				i += 1
