@@ -1,7 +1,7 @@
 import math
 import unittest
 import random
-from bases import Bases
+from src.bases import Bases
 bases = Bases()
 
 class Test(unittest.TestCase):
