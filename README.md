@@ -13,7 +13,7 @@ alphabets can be used.
 Python:
 
 ```
-For now just download this to the directory you want to use it in, I'll work on a pip for this soon.
+pip install bases.py
 ```
 
 ## Usage
