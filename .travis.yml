@@ -5,8 +5,9 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
+  - "3.5"
   - "nightly"
 # command to install dependencies
 install:
 # command to run tests
-script:  python test.py
+script: cd tests && python -m unittest discover
