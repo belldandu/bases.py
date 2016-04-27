@@ -1,5 +1,7 @@
 import math
 import unittest
+import unithelper
+unithelper.init()
 import random
 from src.bases import Bases
 bases = Bases()
