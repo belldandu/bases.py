@@ -10,4 +10,4 @@ python:
 # command to install dependencies
 install:
 # command to run tests
-script: cd tests && python
+script: cd tests && python test
