@@ -139,5 +139,5 @@ Base-64 warning: besides there being several different standards, padding isn't 
 
 ## License
 
-[MIT license](http://belldandu.mit-license.org/). (c) 2015 Belldandu
+[MIT license](http://belldandu.mit-license.org/@2015-2016). (c) 2015-2016 Belldandu
 and [contributors](https://github.com/belldandu/bases.py/graphs/contributors).
