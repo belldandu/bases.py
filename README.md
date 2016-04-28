@@ -9,7 +9,7 @@ Common bases have convenience aliases (see below), but arbitrary/custom
 alphabets can be used.
 
 As most people have noticed pythons `int()` only supports one way base conversions.
-`int('lol',36) // => 28101`. This library was created to help those python programmers by providing a bases conversion system that works both ways and can be customized and supports from base 2 all the way up to base 64.
+`int('lol',36) // => 28101`. Pythons `format()` also only supports conversion the other way up to base 16. This library was created to help those python programmers by providing a bases conversion system that works both ways and can be customized and supports from base 2 all the way up to base 64 all in one library.
 
 ## Installation
 
