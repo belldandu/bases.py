@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kamijoutouma/bases.py.png?branch=master)](https://travis-ci.org/kamijoutouma/bases.py)
+[![Build Status](https://travis-ci.org/belldandu/bases.py.png?branch=master)](https://travis-ci.org/belldandu/bases.py)
 
 # bases.py
 
@@ -139,5 +139,5 @@ Base-64 warning: besides there being several different standards, padding isn't 
 
 ## License
 
-[MIT license](http://touma.mit-license.org/). (c) 2015 KamijouTouma
-and [contributors](https://github.com/kamijoutouma/bases.py/graphs/contributors).
+[MIT license](http://belldandu.mit-license.org/). (c) 2015 Belldandu
+and [contributors](https://github.com/belldandu/bases.py/graphs/contributors).
