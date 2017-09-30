@@ -135,5 +135,16 @@ class Test(unittest.TestCase):
 				self.assertEqual(bases.fromBase(str(exp), base), int(num))
 				i += 1
 
+	def testBase1662(self):
+		# test with UUID random numbers
+		from uuid import uuid4
+		i = 0
+		while i < 20:
+			uid = str(uuid4()).replace('-','')
+			if uid[0] == '0':
+				uid = uid[1:]
+			self.assertEqual(bases.toBase16(bases.fromBase62(bases.toBase62(bases.fromBase16(uid)))), uid)
+			i += 1
+
 if __name__ == '__main__':
 	unittest.main()
