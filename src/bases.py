@@ -75,7 +75,7 @@ class Bases(object):
 		# execute at least once, even if num is 0, since we should return the '0':
 		while num >= 0:
 			digits.append(num % base)# TODO handle negatives properly?
-			num = math.floor(num / base)
+			num //= base
 			if num == 0:
 				break
 		chars = [];
@@ -92,7 +92,7 @@ class Bases(object):
 		while len(strRep):
 			c = strRep[len(strRep) - 1]
 			strRep = strRep[:len(strRep) - 1]
-			num += math.pow(base, pos) * alphabet.index(c)
+			num += (base ** pos) * alphabet.index(c)
 			pos += 1
 		return int(num)
 
